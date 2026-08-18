@@ -1,0 +1,775 @@
+/* ========= Reset ========= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f7f7f7;
+
+    color:#222;
+
+    line-height:1.6;
+
+}
+
+/* ========= Container ========= */
+
+.container{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+}
+
+/* ========= Header ========= */
+
+/*==========================
+        HEADER
+===========================*/
+
+.header{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    padding:20px 0;
+
+}
+
+.header .container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+}
+
+.logo{
+
+    display:inline-flex;
+
+    align-items:center;
+
+}
+
+.logo img{
+    width:220px;
+    height:auto;
+    border-radius: 10px;
+    display:block;
+}
+
+/* ========= Common Sections ========= */
+
+section{
+
+    padding:80px 0;
+
+}
+
+/* ========= Hero ========= */
+
+.hero{
+
+    min-height:650px;
+
+    background:#e8eef8;
+
+}
+
+/* ========= Article ========= */
+
+.article{
+
+    background:#ffffff;
+
+    min-height:550px;
+
+}
+
+/* ========= Benefits ========= */
+
+.benefits{
+
+    background:#f8f9fb;
+
+    min-height:450px;
+
+}
+
+/* ========= Feature ========= */
+
+.feature{
+
+    background:#ffffff;
+
+    min-height:550px;
+
+}
+
+/* ========= Testimonials ========= */
+
+.testimonials{
+
+    background:#f4f7fc;
+
+    min-height:450px;
+
+}
+
+/* ========= ZIP ========= */
+
+.zip-section{
+
+    background:#ffffff;
+
+    min-height:350px;
+
+}
+
+/* ========= FAQ ========= */
+
+.faq{
+
+    background:#f8f8f8;
+
+    min-height:450px;
+
+}
+
+/* ========= Footer ========= */
+
+.footer{
+
+    background:#121212;
+
+    color:#ffffff;
+
+    padding:50px 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:90vh;
+
+    display:flex;
+    align-items:center;
+
+    background-image:url("../images/banner.png");
+
+    background-size:cover;
+    background-position:center;
+
+    overflow:hidden;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    );
+
+}
+
+.hero .container{
+
+    position:relative;
+    z-index:2;
+
+}
+
+.hero-content{
+
+    max-width:650px;
+
+    color:#fff;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(8px);
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content h1{
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    line-height:1.1;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:rgba(255,255,255,.9);
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+   ZIP FORM
+=========================== */
+
+.zip-form{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:35px;
+
+}
+
+.zip-form input{
+
+    flex:1;
+
+    height:60px;
+
+    border:none;
+
+    outline:none;
+
+    padding:0 20px;
+
+    font-size:16px;
+
+    border-radius:10px;
+
+}
+
+.zip-form button{
+
+    padding:0 32px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.zip-form button:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ===========================
+   HOW IT WORKS
+=========================== */
+
+.hero-process{
+
+    color:#fff;
+
+}
+
+.hero-process h3{
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:15px;
+
+}
+
+.process-card{
+
+    padding:22px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:12px;
+
+}
+
+.process-icon{
+
+    font-size:28px;
+
+    margin-bottom:12px;
+
+}
+
+.process-card h4{
+
+    font-size:18px;
+
+    margin-bottom:8px;
+
+}
+
+.process-card p{
+
+    font-size:14px;
+
+    line-height:1.5;
+
+    color:rgba(255,255,255,.85);
+
+    margin:0;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .hero{
+
+        min-height:auto;
+
+        padding:80px 0;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+
+    }
+
+    .zip-form{
+
+        flex-direction:column;
+
+    }
+
+    .zip-form input{
+
+        width:100%;
+
+    }
+
+    .zip-form button{
+
+        height:58px;
+
+        width:100%;
+
+    }
+
+    .hero-process{
+
+        margin-top:45px;
+
+    }
+
+    .process-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .process-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+added right side content on hero section */
+
+.hero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.3fr .9fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.hero-process{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    border-radius:18px;
+
+    padding:35px;
+
+}
+
+.hero-process h3{
+
+    color:#fff;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    font-size:28px;
+
+}
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.process-card{
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    padding:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,.14);
+
+}
+
+.process-icon{
+
+    width:60px;
+
+    height:60px;
+
+    margin:0 auto 15px;
+
+    border-radius:50%;
+
+    background:#1D4ED8;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+}
+
+.process-card h4{
+
+    color:#fff;
+
+    margin-bottom:10px;
+
+}
+
+.process-card p{
+
+    color:rgba(255,255,255,.85);
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    margin:0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    min-height:80vh;
+
+}
+
+.hero-content{
+
+    max-width:100%;
+
+}
+
+.hero-content h1{
+
+    font-size:48px;
+
+}
+
+
+
+
+.hero-wrapper{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero-process{
+
+    display:none;
+
+}
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+ .header{
+        padding:15px 0;
+    }
+
+.logo img{
+        width:170px;
+    }    
+
+.hero{
+
+    padding:90px 0 70px;
+
+    min-height:auto;
+
+}
+
+.hero-content{
+    padding-top: 20px;
+    text-align:center;
+
+}
+
+.hero-content h1{
+
+    font-size:36px;
+
+}
+
+.hero-content p{
+
+    font-size:16px;
+
+}
+
+.zip-form{
+
+    flex-direction:column;
+
+}
+
+.zip-form input{
+
+    width:100%;
+    min-height:58px;
+
+}
+
+.zip-form button{
+
+    width:100%;
+
+    height:58px;
+
+}
+
+.hero-trust{
+
+    justify-content:center;
+
+}
+
+}
+
+
+/* ===========================
+   SMALL DEVICES
+=========================== */
+
+@media(max-width:480px){
+
+.hero-content h1{
+
+    font-size:30px;
+
+}
+
+.hero-content p{
+
+    font-size:15px;
+
+}
+
+.hero-tag{
+
+    font-size:13px;
+
+}
+
+}
